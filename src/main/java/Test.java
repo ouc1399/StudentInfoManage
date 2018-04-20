@@ -77,6 +77,13 @@ public class test {
         StuInfoDeal.createCSV(file,conList);
     }
 
-
+    @Test
+    public void FileOrder() throws Exception {
+        List<String> conList = new ArrayList<String>();
+        conList = StuInfoDeal.printInConsole(file);
+        file = new File("D:"+File.separator+"File"+File.separator+"exportInfo.csv");
+        List<String> list = StuInfoDeal.consoleShow(conList, 0);
+        StuInfoDeal.createCSV(file,list);
+    }
 
 }

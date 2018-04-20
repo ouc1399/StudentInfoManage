@@ -29,13 +29,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/StuInfoDeal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="174" column="23" lean-forward="false" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2252#2260#0" expanded="true" />
                 <element signature="e#2338#2347#0" expanded="true" />
-                <element signature="e#3832#3840#0" expanded="true" />
-                <element signature="e#3917#3926#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,13 +42,14 @@
       <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#663#671#0" expanded="true" />
                 <element signature="e#1256#1264#0" expanded="true" />
                 <element signature="e#1846#1854#0" expanded="true" />
+                <element signature="e#2148#2156#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test.createFile">
+  <component name="RunManager" selected="JUnit.test.FileOrder">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -216,6 +215,26 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="test.FileOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="StuInfoManage" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="FileOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="test.createFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="StuInfoManage" />
@@ -244,26 +263,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
       <option name="METHOD_NAME" value="exportData" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="test.getCSVData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="StuInfoManage" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="getCSVData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -357,19 +356,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.test.getCSVData" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.test.showInConsole" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.test.showInConsoleInverse" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.test.exportData" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.test.createFile" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.test.showInConsole" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.test.showInConsoleInverse" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.test.exportData" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.test.createFile" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.test.FileOrder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.test.createFile" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.test.exportData" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.test.showInConsoleInverse" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.test.showInConsole" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.test.getCSVData" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.test.FileOrder" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.test.createFile" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.test.exportData" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.test.showInConsoleInverse" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.test.showInConsole" />
       </list>
     </recent_temporary>
   </component>
@@ -387,13 +386,16 @@
       <option name="presentableId" value="Default" />
       <updated>1524191654127</updated>
       <workItem from="1524191655697" duration="2289000" />
-      <workItem from="1524194040505" duration="1841000" />
+      <workItem from="1524194040505" duration="2059000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_Sort - 2018.04.20 at 10h 37m 44s.xml">
-      <configuration name="Test.Sort" configurationId="JUnit" />
+    <history-entry file="test_FileOrder - 2018.04.20 at 11h 48m 01s.xml">
+      <configuration name="test.FileOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_FileOrder - 2018.04.20 at 11h 48m 15s.xml">
+      <configuration name="test.FileOrder" configurationId="JUnit" />
     </history-entry>
     <history-entry file="test_SortInverse - 2018.04.20 at 10h 44m 20s.xml">
       <configuration name="test.SortInverse" configurationId="JUnit" />
@@ -421,7 +423,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4130000" />
+    <option name="totallyTimeSpent" value="4348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -435,7 +437,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963446" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6392694" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32115677" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -504,8 +506,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2252#2260#0" expanded="true" />
             <element signature="e#2338#2347#0" expanded="true" />
-            <element signature="e#3832#3840#0" expanded="true" />
-            <element signature="e#3917#3926#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,6 +519,7 @@
             <element signature="e#663#671#0" expanded="true" />
             <element signature="e#1256#1264#0" expanded="true" />
             <element signature="e#1846#1854#0" expanded="true" />
+            <element signature="e#2148#2156#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -534,26 +535,25 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/StuInfoDeal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="174" column="23" lean-forward="false" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2252#2260#0" expanded="true" />
             <element signature="e#2338#2347#0" expanded="true" />
-            <element signature="e#3832#3840#0" expanded="true" />
-            <element signature="e#3917#3926#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#663#671#0" expanded="true" />
             <element signature="e#1256#1264#0" expanded="true" />
             <element signature="e#1846#1854#0" expanded="true" />
+            <element signature="e#2148#2156#0" expanded="true" />
           </folding>
         </state>
       </provider>
