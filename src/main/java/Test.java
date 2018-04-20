@@ -68,4 +68,15 @@ public class test {
         conList.add("10,jack10,12,91");
         StuInfoDeal.consoleInfoInverse(conList,0);
     }
+
+    @Test
+    public void createFile() throws Exception {
+        List<String> conList = new ArrayList<String>();
+        conList = StuInfoDeal.printInConsole(file);
+        file = new File("D:"+File.separator+"File"+File.separator+"exportInfo.csv");
+        StuInfoDeal.createCSV(file,conList);
+    }
+
+
+
 }
