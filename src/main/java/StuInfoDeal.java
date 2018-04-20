@@ -10,21 +10,15 @@ import java.util.List;
 public class StuInfoDeal {
 
 
-    //控制台输出，不需要列名，直接从具体数据读取
+    //获取CSV文件数据
     public static List<String> printInConsole(File file) throws Exception{
         List<String> list = new ArrayList<String>();
         BufferedReader reader = new BufferedReader(new FileReader(file));
         CsvReader creader = new CsvReader(reader,',');
         int num =0;
         while(creader.readRecord()){
-            if(num==0)
-                num=1;
-            else if(num!=0){																			//记录行数
-                String str = creader.getRawRecord();													//读取一行数据
-                list.add(str);
-                num+=1;
-            }
-
+            String str = creader.getRawRecord();													//读取一行数据
+            list.add(str);
         }
         creader.close();
         Iterator<String> it = list.iterator();

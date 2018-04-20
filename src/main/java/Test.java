@@ -18,7 +18,7 @@ public class test {
     }
 
     @Test
-    public void showConsole() throws Exception {
+    public void getCSVData() throws Exception {
         StuInfoDeal.printInConsole(file);
     }
 }
