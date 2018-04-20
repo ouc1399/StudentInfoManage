@@ -1,7 +1,47 @@
+import com.csvreader.CsvReader;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class StuInfoDeal {
 
 
-    //正序
+    //控制台输出，不需要列名，直接从具体数据读取
+    public static List<String> printInConsole(File file) throws Exception{
+        List<String> list = new ArrayList<String>();
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        CsvReader creader = new CsvReader(reader,',');
+        int num =0;
+        while(creader.readRecord()){
+            if(num==0)
+                num=1;
+            else if(num!=0){																			//记录行数
+                String str = creader.getRawRecord();													//读取一行数据
+                list.add(str);
+                num+=1;
+            }
+
+        }
+        creader.close();
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()){
+            System.out.println(it.next());
+        }
+        return list;
+    }
+
+
+
+
+
+
+
+
+    //正序函数
     public static void bubbleSort(int arr[]){
         int length = arr.length;
         int i,j,temp;
