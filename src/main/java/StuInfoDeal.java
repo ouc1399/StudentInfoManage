@@ -62,13 +62,53 @@ public class StuInfoDeal {
         return copyList;
     }
 
+    //控制台输出反序
+    public static List<String> consoleInfoInverse(List<String> list,int num){
+        List<String> copyList = new ArrayList<String>(); 												//用于返回排好序的list对象
+        List<Integer> tmpList = new ArrayList<Integer>();
+        if(list.size()>0){
+            copyList.add(list.get(0));																	//将列名赋值给resList
+            list.remove(0);
+        }
+        int [] arr = new int[list.size()];																//存放排序的数组
+        int j=0;
+        //获取须要排序的数组
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()){
+            String res = it.next();
+            String[] result = res.split(",");
+            arr[j]=Integer.parseInt(result[num]);
+            tmpList.add(Integer.parseInt(result[num]));
+            j++;
+        }
+        bubbleSortInverse(arr);
+        //对list进行排序
+        for(int k=0;k<arr.length;k++){
+            int tmpNum = arr[k];
+            System.out.println("tmpNum："+tmpNum);
+            Iterator<Integer> itTmp = tmpList.iterator();
+            while(itTmp.hasNext()){
+                int temp = itTmp.next();
+                if(tmpNum==temp){
+                    int index = tmpList.indexOf(temp);												//获取到目标数值在tmpList中的下标
+                    tmpList.set(index, -1);
+                    copyList.add(list.get(index));
+                    list.set(index, "");
+                }
+            }
+        }
+        Iterator<String> ite = copyList.iterator();
+        while (ite.hasNext()){
+            System.out.println(ite.next());
+        }
+        return copyList;
+    }
 
 
 
 
 
-
-    //获取CSV文件数据
+        //获取CSV文件数据
     public static List<String> printInConsole(File file) throws Exception{
         List<String> list = new ArrayList<String>();
         BufferedReader reader = new BufferedReader(new FileReader(file));

@@ -51,4 +51,21 @@ public class test {
         conList.add("10,jack10,12,91");
         StuInfoDeal.consoleShow(conList,0);
     }
+
+    @Test
+    public void showInConsoleInverse() throws Exception {
+        List<String> conList = new ArrayList<String>();
+        conList.add("学号,姓名,年龄,成绩");
+        conList.add("4,jack1,16,85");
+        conList.add("2,jack2,14,75");
+        conList.add("7,jack3,15,77");
+        conList.add("5,jack5,18,88");
+        conList.add("1,jack4,17,76");
+        conList.add("3,jack7,17,67");
+        conList.add("9,jack9,13,67");
+        conList.add("6,jack6,21,95");
+        conList.add("8,jack8,16,82");
+        conList.add("10,jack10,12,91");
+        StuInfoDeal.consoleInfoInverse(conList,0);
+    }
 }
