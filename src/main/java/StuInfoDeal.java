@@ -9,8 +9,48 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 
 public class StuInfoDeal {
+    /**
+     * 分三步走：
+     *  第一步：获取CSV文件数据
+     *  第二步：对数据按照要求排序
+     *  第三步：将排好序的数据输出到控制台
+     *  第四步：生成CSV文件并写入数据
+     * @param args
+     * @throws Exception
+     */
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        List<String> list = new ArrayList<String>();
+        Scanner s = new Scanner(System.in);
+        File file = new File("D:" + File.separator + "File" + File.separator + "sutdentInfo.csv");                //文件路径
+        File exportFile = new File("D:" + File.separator + "File" + File.separator + "ExportInfo.csv");                //文件路径
+        if (!file.getParentFile().exists()) {                                                                               //父路径不存在
+            System.out.println(file.getName() + " 不存在.");
+
+        } else if (file.exists()) {                                                                        //文件存在
+            System.out.println(file.getName() + " 存在.");
+            System.out.println("请选择排序方式： 正序-请输入Z，倒序-请输入D：");
+            String type = input.next();
+            System.out.println("请选择要排序对象：学号-请输入0 年龄-请输入2  成绩-请输入3");
+            int num = input.nextInt();
+            //第一步 获取数据
+            list = printInConsole(file);
+            if(type.equals("Z")){
+                //排序并输出到控制台
+                List<String> tmpList = consoleShow(list,num);
+                //生成文件并写入数据
+                createCSV(exportFile,tmpList);
+            }else if(type.equals("D")){
+                //排序并输出到控制台
+                List<String> tepList = consoleInfoInverse(list,num);
+                //生成文件并写入数据
+                createCSV(exportFile,tepList);
+            }
+        }
+    }
 
     /**
      * 总共有四列，分别为：学号 姓名 年龄 成绩  用0  1 2 3 代替，可对学号 年龄 成绩进行排序
@@ -18,10 +58,6 @@ public class StuInfoDeal {
      * @param num
      * @return
      */
-
-
-
-
 
     //正序结果
     public static List<String> consoleShow(List<String> list,int num){   							//list代表从csv文件中获取到的数据，i代表要排序的对象
@@ -147,11 +183,6 @@ public class StuInfoDeal {
         }
 
     }
-
-
-
-
-
 
     //正序函数
     public static void bubbleSort(int arr[]){
