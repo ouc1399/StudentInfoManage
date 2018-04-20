@@ -86,4 +86,12 @@ public class test {
         StuInfoDeal.createCSV(file,list);
     }
 
+    @Test
+    public void FileOrderInverse() throws Exception {
+        List<String> conList = new ArrayList<String>();
+        conList = StuInfoDeal.printInConsole(file);
+        file = new File("D:"+File.separator+"File"+File.separator+"exportInfo.csv");
+        List<String> list = StuInfoDeal.consoleInfoInverse(conList, 0);
+        StuInfoDeal.createCSV(file,list);
+    }
 }
